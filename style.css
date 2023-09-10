@@ -1,0 +1,278 @@
+/* Poppins import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #f7f7f7;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    padding: 0;
+}
+
+.link-item {
+    padding: 1rem;
+    list-style-type: none;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-item:hover, .active {
+    background: #ffffff98;
+}
+
+.menu a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Body section */
+
+.main--content {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-position: initial;
+    object-fit: cover;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 10px;
+}
+
+.search--box {
+    background: white;
+    border-radius: 15px;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background: transparent;
+    padding: 10px;
+    color: black;
+}
+
+.search--box span {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box span:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: gray;
+}
+
+/* Card container */
+
+.card--container {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.main--title {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.payment--card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment--card:hover {
+    transform: translateY(-5px);
+}
+
+.card--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.amount--value {
+    font-size: 24px;
+}
+
+.card--detail {
+    font-size: 12px;
+    color: #777777;
+    letter-spacing: 2px;
+}
+
+/* Tab section */
+
+.tab--wrapper {
+    background: #f7f7f7;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #3385B2;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+}
+
+tbody {
+    background-color: white;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #A9D0E6;
+}
+
+tfoot {
+    background: #3385B2;
+    font-weight: bold;
+    color: white;
+}
+
+tfoot td {
+    padding: 15px;
+    color: white;
+}
+
+.table-container button {
+    color: blue;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+    .sidebar {
+        display: none;
+    }
+}
